@@ -1,0 +1,496 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+
+
+/***********************************************************************************************************************************Media query mobile (0>768px)*********************************************************************************************************************/
+
+
+    
+    header{
+        grid-area: header;
+    }
+    
+    
+    .mainIndex{
+        grid-area: mainIndex;
+    }
+    
+    footer{
+        grid-area: footer;
+    }
+    
+    nav{
+        grid-area: nav;
+    }
+    
+body{
+    background-color: tomato;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 40% 15% 40% 11%;
+    grid-template-areas: 
+    "header"    
+    "nav"
+    "mainIndex"    
+    "footer";    
+}
+
+.contenedorPrincipal{
+    font-family: 'Holtwood One SC', serif;
+    background-image:linear-gradient(to bottom, yellow, blue, red);
+    border-style: solid;
+    border-radius: 2rem;   
+    border-top-color: yellow;
+    border-right-color: blue;
+    border-left-color: blue;
+    border-bottom-color: red;   
+    height: 20%;
+    margin: 10px;
+    padding-top: 10px;
+    text-align: center;
+    
+}
+
+
+h1{
+    color: gold;
+    text-align: center;
+    font-size: 8mm;
+    }
+
+
+
+.searchBar{
+    font-family: 'Holtwood One SC', serif;
+    background-color: lightseagreen;
+    border-style: solid;   
+    border-top-color: yellow;
+    border-right-color: blue;
+    border-left-color: blue;
+    border-bottom-color: red; 
+    padding: 10px;
+    margin: 10px;
+    height: 60px;
+}
+
+.imagenPortada{
+    width: 100%;
+    height: 60%;
+    border-radius: 10px;
+    border-style: solid;   
+    border-top-color: yellow;
+    border-right-color: blue;
+    border-left-color: blue;
+    border-bottom-color: red; 
+    
+}
+
+.navMobil{
+    margin-top: 50px; 
+}
+
+.mainIndex{
+    margin: 15px;   
+    margin-bottom: 50px;
+    font-family: 'Marcellus', serif;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "h2"
+    "primerParra"
+    "seguParra";
+    gap: 5px;
+    
+}
+
+.primerParrafo{
+    font-size: 4mm;
+    font-weight: bold;
+    color: blue;    
+    border-style: dashed;
+    border-color: yellow;
+    margin: 0 auto;    
+    text-align: center;    
+    background-color: gold;
+    padding: 10px;
+
+}
+
+.segundoParrafo{
+    text-align: center;
+    font-size: 9mm;
+    font-weight: bolder;
+    color: green;    
+    margin: 0 auto;
+
+}
+
+h2{
+    color: yellow;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 6mm;
+}
+
+footer{
+    font-family: 'Holtwood One SC', serif;
+    background-color:lightseagreen;
+    border-style:groove;
+    border-color: blue;
+    margin: 15px;
+    text-align: center;
+
+    
+}
+
+
+/*********************************************************************************************************************************************************Media query para desktop (<768px)*******************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+
+@media (min-width:768px){
+
+    header{         
+        padding: 15px;
+        font-family: 'Holtwood One SC', serif;
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-template-rows: 60% 40%;
+        grid-template-areas: 
+        "contenedorPrincipal imagenPortada"
+        "searchBar imagenPortada";   
+    
+    }
+    
+    .contenedorPrincipal{
+        grid-area: contenedorPrincipal;
+    }
+    
+    .imagenPortada{
+        grid-area: imagenPortada;
+    }
+    
+    .searchBar{
+        grid-area: searchBar;
+    }
+    
+    .searchBar{
+        background-color: lightseagreen;
+        border-style: solid;   
+        border-top-color: yellow;
+        border-right-color: blue;
+        border-left-color: blue;
+        border-bottom-color: red; 
+        padding: 10px;
+        margin: 10px;
+    }
+    
+    .navMobil{
+        margin-top: 15px; 
+    }
+    
+    body{
+        background-color:goldenrod;    
+        background-image: url("../img/Portada3.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+    }
+
+    body{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 16% 15% 35% 25%;
+        grid-template-areas: 
+        "header"
+        "nav"
+        "mainIndex"
+        "mainIndex"
+        "footer";
+        min-height: 100vh;
+        height: 1500px;
+        
+
+    }
+    
+    
+    ul{
+        text-align: center;
+        margin-top: 15px;
+    }
+    
+    li{
+        list-style-type: none;    
+        display: inline-block;    
+    }
+    
+    .contenedorNav{    
+        font-size: large; 
+        font-family: 'Holtwood One SC', serif;  
+        color: blue; 
+        font-weight: bold;
+        background-color:khaki;
+        text-decoration: none;
+        display: flex;
+        flex-direction: row;
+        border: groove 3px blue;
+        border-radius: 20px ;
+        padding: 20px;
+        margin: 8px;    
+    }
+    
+    .contenedorNav:hover{
+        transform: scale(1.3);
+        transition-property: all;
+        transition-duration: 1s;
+    }
+    
+    
+    
+    
+    
+    
+    .imagenPortada{
+        width: 95%;
+        height: 95%;
+        border-radius: 10px;
+        border-style: solid;   
+        border-top-color: yellow;
+        border-right-color: blue;
+        border-left-color: blue;
+        border-bottom-color: red; 
+        
+    }
+    
+    .contenedorPrincipal{
+        background-image:linear-gradient(to bottom, yellow, blue, red);
+        border-style: solid;
+        border-radius: 2rem;   
+        border-top-color: yellow;
+        border-right-color: blue;
+        border-left-color: blue;
+        border-bottom-color: red;   
+        font-size: x-large;    
+        padding: 30px 30px 15px 30px;
+        margin: 30px; 
+        height: 70%;  
+    }
+    
+    
+    
+    
+    
+    .mainIndex{
+        margin: 15px;   
+        font-family: 'Marcellus', serif;
+        display: grid;
+        grid-template-columns: 35% 62%;
+        grid-template-rows: 50% 15%;
+        grid-template-areas: 
+        "h2 primerParra"
+        "h2 primerParra"
+        "seguParra seguParra";
+        gap: 5px;
+        
+    }
+    
+    h2{
+        grid-area: h2;
+    }
+    
+    .primerParrafo{
+        grid-area: primerParra;
+    }
+    
+    .segundoParrafo{
+        grid-area: seguParra;
+    }
+    
+    
+    h1{
+    color: gold;
+    text-align: center;
+    }
+    
+    
+    h2{
+        text-align: center;
+        font-size: 15mm;
+        color: darkred;    
+        padding: 10px;
+        margin: 10px;
+    }
+    
+    .primerParrafo{
+        font-size: 10mm;
+        font-weight: bold;
+        color: red;    
+        border-style: dashed;
+        border-color: darkred;
+        margin: 45px;
+        padding: 10px 10px 10px 10px;  
+        text-align: center;
+        align-content: stretch;
+        background-color: gold;
+    
+    }
+    
+    .segundoParrafo{
+        text-align: center;
+        font-size: 15mm;
+        font-weight: bolder;
+        color: blue;
+        font-style: italic bold;
+        margin: 20px;
+    
+    }
+    
+    
+    .carrusel{
+        width: 70%;
+        height: 100%;
+        border: black solid;
+        border-style: groove;
+        margin: 0 auto;
+    }
+    
+    
+    .mainGalery{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 50% 40%;
+        grid-template-areas: 
+        "tituloP"
+        "carousel"
+        ;
+    
+    }
+
+        
+       
+    .tituloTrending{
+        grid-area: tituloP;
+    }
+    
+    .carrusel{
+        grid-area: carousel;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    footer{
+        font-family: 'Holtwood One SC', serif;
+        background-color:tomato;
+        border-style:groove;
+        border-color: red;        
+        text-align: center;
+    
+        
+    }
+    
+    
+    .iconosRedes{
+        border-style: solid;
+        border-color: blue;
+        background-color:firebrick;
+        margin: 10px;
+        margin-left: 20px;
+    }
+    
+    .iconosRedes:hover{
+        transform: scale(1.3);
+        transition-property: all;
+        transition-duration: 1s;
+    }
+    
+    
+    .tituloTrending{
+        font-size: 80px;
+        font-family: 'Marcellus', serif;
+        font-weight: bolder;
+        color: red;
+        margin: 25px;
+    
+    }
+    
+    .imagenTrending{
+        width: 200px;
+        height: 190px;
+        border-radius: 15px;
+        border-style: double;
+        border-width: 5px;
+        border-color: red;
+    
+    }
+    
+    .contenedorPequeñoTrending{
+        width: 300px;
+        height: 320px;
+        border-radius: 20px;
+        border-style: groove;
+        border-color: blue;
+        background-color: goldenrod;
+        text-align: center;
+        padding: 10px;
+        margin: 30px 25px 30px 25px;
+        
+    }
+    
+    .nombreJugador{
+        font-weight: bolder;
+        font-size: 35px;
+        color: red;
+        margin: 2px 5px 10px 5px; 
+    }
+    
+    .valorJugador{
+        font-weight: bold;
+        font-size: 20px;
+        color: blue;
+        margin: 4px 5px 10px 5px
+    
+    }
+    
+    .botonAgente{
+    
+        font-weight: bold;
+        font-size: 20px;    
+        margin-bottom: 10px;
+        border-style: groove;
+        border-color: crimson;
+        background-color: crimson;
+    }
+    
+    .seccionPrincipal{
+        display:flex;
+        flex-direction: row;
+        padding-left: 100px;
+        
+    }
+    
+    .seccionPrincipal2{
+        display:flex;
+        flex-direction: row;
+        padding-left: 300px;
+        
+    }
+    
+    .seccionLocal{
+        display:flex;
+        flex-direction: row;
+        padding-left: 300px;
+    }
+    
+    .color{
+        background-color: blue;
+    }
+    
+
+}
