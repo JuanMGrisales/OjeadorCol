@@ -1,155 +1,3 @@
-*{
-    margin:0;
-    padding:0;
-}
-
-
-
-/***********************************************************************************************************************************Media query mobile (0>768px)*********************************************************************************************************************/
-
-
-    
-    header{
-        grid-area: header;
-    }
-    
-    
-    .mainIndex{
-        grid-area: mainIndex;
-    }
-    
-    footer{
-        grid-area: footer;
-    }
-    
-    nav{
-        grid-area: nav;
-    }
-    
-body{
-    background-color: tomato;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 40% 15% 40% 11%;
-    grid-template-areas: 
-    "header"    
-    "nav"
-    "mainIndex"    
-    "footer";    
-}
-
-.contenedorPrincipal{
-    font-family: 'Holtwood One SC', serif;
-    background-image:linear-gradient(to bottom, yellow, blue, red);
-    border-style: solid;
-    border-radius: 2rem;   
-    border-top-color: yellow;
-    border-right-color: blue;
-    border-left-color: blue;
-    border-bottom-color: red;   
-    height: 20%;
-    margin: 10px;
-    padding-top: 10px;
-    text-align: center;
-    
-}
-
-
-h1{
-    color: gold;
-    text-align: center;
-    font-size: 8mm;
-    }
-
-
-
-.searchBar{
-    font-family: 'Holtwood One SC', serif;
-    background-color: lightseagreen;
-    border-style: solid;   
-    border-top-color: yellow;
-    border-right-color: blue;
-    border-left-color: blue;
-    border-bottom-color: red; 
-    padding: 10px;
-    margin: 10px;
-    height: 60px;
-}
-
-.imagenPortada{
-    width: 100%;
-    height: 60%;
-    border-radius: 10px;
-    border-style: solid;   
-    border-top-color: yellow;
-    border-right-color: blue;
-    border-left-color: blue;
-    border-bottom-color: red; 
-    
-}
-
-.navMobil{
-    margin-top: 50px; 
-}
-
-.mainIndex{
-    margin: 15px;   
-    margin-bottom: 50px;
-    font-family: 'Marcellus', serif;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: 
-    "h2"
-    "primerParra"
-    "seguParra";
-    gap: 5px;
-    
-}
-
-.primerParrafo{
-    font-size: 4mm;
-    font-weight: bold;
-    color: blue;    
-    border-style: dashed;
-    border-color: yellow;
-    margin: 0 auto;    
-    text-align: center;    
-    background-color: gold;
-    padding: 10px;
-
-}
-
-.segundoParrafo{
-    text-align: center;
-    font-size: 9mm;
-    font-weight: bolder;
-    color: green;    
-    margin: 0 auto;
-
-}
-
-h2{
-    color: yellow;
-    font-weight: bolder;
-    text-align: center;
-    font-size: 6mm;
-}
-
-footer{
-    font-family: 'Holtwood One SC', serif;
-    background-color:lightseagreen;
-    border-style:groove;
-    border-color: blue;
-    margin: 15px;
-    text-align: center;
-
-    
-}
-
-
-/*********************************************************************************************************************************************************Media query para desktop (<768px)*******************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-
 @media (min-width:768px){
 
     header{         
@@ -192,7 +40,7 @@ footer{
     }
     
     body{
-        background-color:goldenrod;    
+          
         background-image: url("../img/Portada3.jpg");
         background-repeat: no-repeat;
         background-size: cover;
@@ -200,9 +48,10 @@ footer{
     }
 
     body{
+        
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 16% 15% 35% 25%;
+        grid-template-rows: 0fr 0fr 1fr 0fr 0fr;
         grid-template-areas: 
         "header"
         "nav"
@@ -210,12 +59,16 @@ footer{
         "mainIndex"
         "footer";
         min-height: 100vh;
-        height: 1500px;
+        height: 100%;
         
 
     }
     
-    
+    .imgGalery{
+        width: 120px;
+        height: 120px;
+    }
+
     ul{
         text-align: center;
         margin-top: 15px;
@@ -333,7 +186,7 @@ footer{
         padding: 10px 10px 10px 10px;  
         text-align: center;
         align-content: stretch;
-        background-color: gold;
+        background-color: darkcyan;
     
     }
     
@@ -349,27 +202,26 @@ footer{
     
     
     .carrusel{
-        width: 70%;
-        height: 100%;
-        border: black solid;
+        width: 500px;        
+        border: slateblue;
         border-style: groove;
         margin: 0 auto;
+        object-fit: cover;
     }
     
     
     .mainGalery{
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 50% 40%;
+        grid-template-rows: 0.5fr 1fr;
         grid-template-areas: 
         "tituloP"
         "carousel"
         ;
     
-    }
+    }   
+    
 
-        
-       
     .tituloTrending{
         grid-area: tituloP;
     }
@@ -386,6 +238,8 @@ footer{
     
     
     footer{
+        padding: 2%;
+        margin: 2%;
         font-family: 'Holtwood One SC', serif;
         background-color:tomato;
         border-style:groove;
@@ -412,10 +266,10 @@ footer{
     
     
     .tituloTrending{
-        font-size: 80px;
+        font-size: 4em;
         font-family: 'Marcellus', serif;
         font-weight: bolder;
-        color: red;
+        color: tomato;
         margin: 25px;
     
     }
