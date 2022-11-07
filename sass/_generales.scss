@@ -3,62 +3,11 @@
     padding:0;
 }
 
-header{
-    grid-area: header;
-}
 
 
-.mainIndex{
-    grid-area: mainIndex;
-}
-
-footer{
-    grid-area: footer;
-}
-
-nav{
-    grid-area: nav;
-}
-
-.navMobil{
-    margin-top: 50px; 
-}
-
-body{
-    background-color: tomato;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 40% 15% 40% 11%;
-    grid-template-areas: 
-    "header"    
-    "nav"
-    "mainIndex"        
-    "footer";    
-}
-
-.mainIndex{
-    margin: 15px;   
-    margin-bottom: 50px;
-    font-family: 'Marcellus', serif;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: 
-    "h2"
-    "primerParra"
-    "seguParra";
-    gap: 5px;
-    
-}
 
 
-footer{
-    font-family: 'Holtwood One SC', serif;
-    background-color:lightseagreen;
-    border-style:groove;
-    border-color: blue;
-    margin: 15px;
-    text-align: center;
 
-    
-}
+
+
+

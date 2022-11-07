@@ -1,350 +1,1983 @@
-@media (min-width:768px){
 
-    header{         
-        padding: 15px;
-        font-family: 'Holtwood One SC', serif;
-        display: grid;
-        grid-template-columns: 3fr 1fr;
-        grid-template-rows: 60% 40%;
-        grid-template-areas: 
-        "contenedorPrincipal imagenPortada"
-        "searchBar imagenPortada";   
-    
-    }
-    
-    .contenedorPrincipal{
-        grid-area: contenedorPrincipal;
-    }
-    
-    .imagenPortada{
-        grid-area: imagenPortada;
-    }
-    
-    .searchBar{
-        grid-area: searchBar;
-    }
-    
-    .searchBar{
-        background-color: lightseagreen;
-        border-style: solid;   
-        border-top-color: yellow;
-        border-right-color: blue;
-        border-left-color: blue;
-        border-bottom-color: red; 
-        padding: 10px;
-        margin: 10px;
-    }
-    
-    .navMobil{
-        margin-top: 15px; 
-    }
-    
-    body{
-          
-        background-image: url("../img/Portada3.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        
-    }
 
-    body{
+
+/******************************************** Breakpoint(574px) - INICIO ********************************************/
+
+
+
+
+@media (min-width: 576px) {
+
+
+        header{       
+            grid-area: header;          
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            background: linear-gradient(to bottom, darkcyan, goldenrod);
+            border-bottom: groove;
+            border-color: lightseagreen;      
+            font-family: 'Alegreya Sans', sans-serif;
+    
         
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 0fr 0fr 1fr 0fr 0fr;
-        grid-template-areas: 
-        "header"
-        "nav"
-        "mainIndex"
-        "mainIndex"
-        "footer";
-        min-height: 100vh;
-        height: 100%;
+        }
+        
+        .navbarParte1{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100%;
+            margin-left: 4%;
+            
+            }
+    
+    
+    
+        .navbar-toggler-icon{
+            background-image: url(../img/hamburger_icon_143010.svg);
+            width: 100px;
+            height: 100px;
+        }
+    
+        .toggler2{
+            background-color: gold;
+            width: 3em;
+            height: 3em;
+            color: black;
+        }
+    
+        .contenidoLi{
+            border: 2px solid darkcyan;
+            background-color: rgb(248, 248, 152);
+            margin-left: 10px;
+            margin-right: 10px;
+            padding: 5px;
+            list-style-type: none;
+            width: 80%;
+            height: 70%;
+            text-align: center;
+            align-items: center;
+        }
+    
+    
+        .imagenPortada {
+            width: 85px;
+            background-color: transparent;
+            border-style: none;
+            height: 40%;
+        }
+    
+        
+    
+        nav{
+            background-color: transparent;
+        }
+    
+    
+        .contenedorNav{
+    
+            font-size: 1.2em;
+            font-family: 'Lilita One', cursive;        
+            color: darkblue;   
+            text-decoration: none;
+            text-align: center;
+            align-items: center;
+            width: 100%;
+            
+    
+        }
+    
+        .contenidoLi:hover{
+            transform: scale(1.1);
+            transition-property: all;
+            transition-duration: 1s;
+        }
+
+
         
 
-    }
-    
-    .imgGalery{
-        width: 120px;
-        height: 120px;
-    }
+        button{
+            width: 100px;
+            height: 80px;
+        }
 
-    ul{
-        text-align: center;
-        margin-top: 15px;
-    }
-    
-    li{
-        list-style-type: none;    
-        display: inline-block;    
-    }
-    
-    .contenedorNav{    
-        font-size: large; 
-        font-family: 'Holtwood One SC', serif;  
-        color: blue; 
-        font-weight: bold;
-        background-color:khaki;
-        text-decoration: none;
-        display: flex;
-        flex-direction: row;
-        border: groove 3px blue;
-        border-radius: 20px ;
-        padding: 20px;
-        margin: 8px;    
-    }
-    
-    .contenedorNav:hover{
-        transform: scale(1.3);
-        transition-property: all;
-        transition-duration: 1s;
-    }
-    
-    
-    
-    
-    
-    
-    .imagenPortada{
-        width: 95%;
-        height: 95%;
-        border-radius: 10px;
-        border-style: solid;   
-        border-top-color: yellow;
-        border-right-color: blue;
-        border-left-color: blue;
-        border-bottom-color: red; 
+
+
+
         
-    }
+        .imagenPortada{
+            grid-area: imagenPortada;
+        }
+        
     
-    .contenedorPrincipal{
-        background-image:linear-gradient(to bottom, yellow, blue, red);
-        border-style: solid;
-        border-radius: 2rem;   
-        border-top-color: yellow;
-        border-right-color: blue;
-        border-left-color: blue;
-        border-bottom-color: red;   
-        font-size: x-large;    
-        padding: 30px 30px 15px 30px;
-        margin: 30px; 
-        height: 70%;  
-    }
+        
+        
+        ul{
+            text-align: center;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            width: 100%;  
+            align-items: center;
+        
+            
+        }
+        
+
     
-    
-    
-    
+        
+        .imagenPortada{
+            width: 140px;
+            height: 120px;
+            background-color: transparent; 
+            border-style: none;
+            
+        }
+
+
+        
+        .contenedorPrincipal{
+            
+            background-image:none;
+            border-style: none;     
+            
+        }
+
+        h1{
+            @include tituloGeneral;
+            font-family: 'Lilita One', cursive; 
+            color: darkblue;
+            font-size: 4em;
+        }
+
+        .contenedorPrincipal{
+            grid-area: contenedorPrincipal;
+        }
+        
+        
     
     .mainIndex{
-        margin: 15px;   
-        font-family: 'Marcellus', serif;
+        grid-area: mainIndex;
+    }
+    
+    footer{
+        grid-area: footer;
+    }
+        
+    body{
+            
         display: grid;
-        grid-template-columns: 35% 62%;
-        grid-template-rows: 50% 15%;
+        grid-template-columns: 100%;
+        grid-template-rows: 210px 100% 150px;
         grid-template-areas: 
-        "h2 primerParra"
-        "h2 primerParra"
-        "seguParra seguParra";
-        gap: 5px;
+        "header"        
+        "mainIndex"        
+        "footer";
+        min-height: 100vh;
+        height: 100%;            
+        background-color: rgb(250, 250, 159);
+        
+    
+    }
+    
+    
+    footer{        
+        background: linear-gradient(to bottom, gold, rgb(247, 222, 161));    
+        border-style: none;
+        text-align: center;    
+        border-top: groove darkcyan;              
         
     }
     
-    h2{
-        grid-area: h2;
+    .parraFooter{
+        @include tituloGeneral;
+        font-size: 6mm;
+        font-weight: lighter;
+        
+    
     }
+
+
+    
+    
+    /****************************** INDEX******************/
+    
+    .mainIndex{        
+        margin-top: 1%;
+        display: flex;
+        flex-direction: column;     
+        
+    }
+    
     
     .primerParrafo{
-        grid-area: primerParra;
-    }
-    
-    .segundoParrafo{
-        grid-area: seguParra;
-    }
-    
-    
-    h1{
-    color: gold;
-    text-align: center;
-    }
-    
-    
-    h2{
-        text-align: center;
-        font-size: 15mm;
-        color: darkred;    
-        padding: 10px;
-        margin: 10px;
-    }
-    
-    .primerParrafo{
-        font-size: 10mm;
-        font-weight: bold;
-        color: red;    
-        border-style: dashed;
-        border-color: darkred;
-        margin: 45px;
-        padding: 10px 10px 10px 10px;  
-        text-align: center;
-        align-content: stretch;
-        background-color: darkcyan;
-    
-    }
-    
-    .segundoParrafo{
-        text-align: center;
-        font-size: 15mm;
+        font-family: 'Lilita One', cursive;        
+        font-size: 3em;
         font-weight: bolder;
-        color: blue;
-        font-style: italic bold;
-        margin: 20px;
+        color: red;    
+        border-style: none; 
+        text-align:center;
+        background-color: transparent;  
+        padding: 5%;      
     
     }
-    
-    
-    .carrusel{
-        width: 500px;        
-        border: slateblue;
-        border-style: groove;
-        margin: 0 auto;
-        object-fit: cover;
-    }
-    
-    
-    .mainGalery{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.5fr 1fr;
-        grid-template-areas: 
-        "tituloP"
-        "carousel"
-        ;
-    
-    }   
     
 
-    .tituloTrending{
-        grid-area: tituloP;
+    
+    .medio{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;   
+    background-color: rgb(247, 224, 99);
     }
+    
+    
+    .segundoParrafo{
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 2em;
+        font-weight: 100;
+        color: darkblue;  
+        font-weight: bold;  
+        border-style: none; 
+        text-align:center;
+    
+    }
+    
+    .imgMedio{
+        width: 50%;
+        height: 80%;
+        object-fit:fill;
+        margin: 0 auto;
+        border-radius: 100%;
+        
+    }
+    
+    .tercerParrafo{
+        font-family: 'Ubuntu', sans-serif;
+        grid-area: tercero;
+        font-size: 1.5em;
+        font-weight: 100;
+        text-align: justify;
+        color:rgba(0, 0, 139, 0.733);    
+    }
+    
+    .cuartoParrafo{
+        grid-area: cuarto;
+        @include tituloTerciario;
+        color: red;         
+        padding: 15%;
+    }
+    
     
     .carrusel{
         grid-area: carousel;
+        width: 85%;    
+        margin: 0 auto;   
+        border-style: double;
+        border-color: darkcyan;   
+        
+    }
+    
+    .imgCarousel{
+        width: 100%;
+        height: 100%;     
+    }
+    
+    .nombreJugadorCarrusel{
+    
+        color: darkred;
+        font-size: 1em;
+        font-family: 'Lilita One', cursive;        
+    
+    
+    }
+    
+        
+
+    /*********************************** CATALOGO *************************************************/
+
+    
+        
+        .seguParra{
+            grid-area: seguParra;
+            @include tituloTerciario;
+            font-size: 6mm;
+            color: darkblue;
+            margin: 6%;
+        
+        }
+        
+        .tituloCatalogo{
+            grid-area: tituloCatalogo;
+            @include tituloSecundario;
+        }
+        
+        .mainGalery{
+            margin-top: 5%;
+            display: grid;
+            grid-template-columns: 19% 19% 19% 19% 19%;
+            grid-template-rows: 8% 17% 17% 17% 17% 17%;
+            grid-template-areas: 
+            "tituloCatalogo tituloCatalogo tituloCatalogo tituloCatalogo tituloCatalogo"
+            "jugador1 jugador2 jugador3 jugador4 jugador5"
+            "jugador6 jugador7 jugador8 jugador9 jugador10"
+            "jugador11 jugador12 jugador13 jugador14 jugador15"
+            "jugador16 jugador17 jugador18 jugador19 jugador20"
+            "seguParra seguParra seguParra seguParra seguParra" 
+            ;    
+            gap: 1%;
+        
+        }   
+        
+        .imgCata{
+            width: 100%;
+            height: 50%;
+            object-fit: cover;
+        }
+    
+        .card-body{
+            padding: 0.1%;
+        }
+
+        h3{
+            font-size: 1.2em;
+        }
+
+        .Jugador1{
+            grid-area: jugador1;                         
+        }
+    
+        .Jugador1-estilo{
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: lighter;
+            color: darkred;
+            padding: 1%; 
+            border-style:double;   
+            border-color:crimson;  
+            background-color: rgb(231, 216, 179);  
+            text-align: center;
+            align-items: center; 
+
+        }
+    
+    
+        .Jugador2{
+            grid-area: jugador2;
+            @extend .Jugador1-estilo;
+    
+        }
+    
+        .Jugador3{
+            grid-area: jugador3;
+            @extend .Jugador1-estilo;  
+
+        }
+    
+        .Jugador4{
+            grid-area: jugador4;
+            @extend .Jugador1-estilo
+
+    
+        }
+    
+        .Jugador5{
+            grid-area: jugador5;
+            @extend .Jugador1-estilo
+
+    
+        }
+    
+        .Jugador6{
+            grid-area: jugador6;
+            @extend .Jugador1-estilo;
+
+        }
+    
+        .Jugador7{
+            grid-area: jugador7;
+            @extend .Jugador1-estilo;
+
+    
+        }
+    
+        .Jugador8{
+            grid-area: jugador8;
+            @extend .Jugador1-estilo;
+
+    
+        }
+    
+        .Jugador9{
+            grid-area: jugador9;
+            @extend .Jugador1-estilo;
+
+    
+        }
+    
+        .Jugador10{
+            grid-area: jugador10;
+            @extend .Jugador1-estilo;
+
+    
+        }
+    
+        .Jugador11{
+            grid-area: jugador11;
+            @extend .Jugador1-estilo;
+
+    
+        }
+    
+        .Jugador12{
+            grid-area: jugador12;
+            @extend .Jugador1-estilo;
+
+    
+        }
+    
+        .Jugador13{
+            grid-area: jugador13;
+            @extend .Jugador1-estilo;
+
+    
+        }
+    
+        .Jugador14{
+            grid-area: jugador14;
+            @extend .Jugador1-estilo;
+
+    
+        }
+    
+        .Jugador15{
+            grid-area: jugador15;
+            @extend .Jugador1-estilo;
+
+    
+        }
+    
+        .Jugador16{
+            grid-area: jugador16;
+            @extend .Jugador1-estilo;
+
+    
+        }
+    
+        .Jugador17{
+            grid-area: jugador17;
+            @extend .Jugador1-estilo;
+
+    
+        }
+    
+        .Jugador18{
+            grid-area: jugador18;
+            @extend .Jugador1-estilo;
+
+    
+        }
+    
+        .Jugador19{
+            grid-area: jugador19;
+            @extend .Jugador1-estilo;
+
+    
+        }
+    
+        .Jugador20{
+            grid-area: jugador20;
+            @extend .Jugador1-estilo;
+
+    
+        }
+    
+    
+
+
+
+    /***************************************************AGENTES************************************************/
+        
+    .titulosAgentes{
+        padding: 5%;    
+    
+    }
+    
+    .titulosAgentes2{
+        padding-top: 10%;
+    
+    }
+    
+    .tituloAgentes1{
+        @include tituloSecundario;
+        font-size: 1.7em;
+        
+
+    }
+    
+    .tituloAgentes2{
+        @include tituloTerciario;
+        font-size: 2em;
+        color: darkorange;   
+    
+    }
+    
+    
+    .acordeon{
+        width: 85%;
+        margin: 0 auto;        
+    
+    }
+    
+.accordion-header{
+    text-align: center;
+}
+
+    .nombreAcordeon{
+        font-family: 'Lilita One', cursive;
+        color: rgb(17, 17, 172);    
+        position: relative;  
+        align-items: center;    
+        padding: 2rem;     
+        background-color: transparent;
+        border: 0;
+        margin-bottom: 5%;
+    
+    }
+    
+    .contenedorNombreAcordeon{
+        background-color: lightgray;
+        border: 1px solid rgba(0,0,0,.125);
     }
     
     
     
     
+    .descripAgente{
+        font-size: 1em;
+        color: darkcyan;
+        font-family: 'Ubuntu', sans-serif;
+    
+    
+    }
     
     
     
-    
-    footer{
-        padding: 2%;
-        margin: 2%;
-        font-family: 'Holtwood One SC', serif;
-        background-color:tomato;
-        border-style:groove;
-        border-color: red;        
-        text-align: center;
+    .imgAgente{
+        width: 50%;
+        height: 50%;
+        object-fit: cover;
+        border-style: groove;
+        border-color: darkcyan;
+        border-radius: 20%;
+        margin-left: 25%;  
+        margin-bottom: 5%;
     
         
     }
     
+    .imgAgente2{
+        padding-left: 20px;
+    }
     
-    .iconosRedes{
-        border-style: solid;
-        border-color: blue;
-        background-color:firebrick;
-        margin: 10px;
+    .bioAgente{
+        color: darkblue;
+        font-family: 'Lilita One', cursive;   
+        text-align: center;
+    }
+    
+
+
+        
+        
+        
+    /***************************************************************************************************/
+    
+    
+    
+    /*******************************QUIENES SOMOS***************************************************/
+    
+
+    .mainGalery2{
+        padding: 4%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    
+    }
+
+
+    .tituloQuien{  
+        @include tituloSecundario;
+        font-size: 2em;
+        
+    }
+    
+    .cartaQuien{
+        padding-left: 5%;
+        padding-right: 5%;
+        font-size: 1.2em;
+        font-family: 'Ubuntu', sans-serif;
+        text-align: justify;
+    
+    
+    }
+    
+    .imgCEO{
+        align-items: center;
+        text-align: center;
+        font-family: 'Lilita One', cursive;  
+        width: 70%;       
+        height: 15%;      
+    
+    }
+    
+    .imgCEO2{
+        border: black groove;
+        border-radius: 40%;
+        width: 50%;
+        height: 50%;
+        object-fit: fill;
+        margin-bottom: 2%;
+    
+    }
+    
+    
+    
+    .seccionMapa{
+        display: flex;
+        flex-direction: column;
+        border-top: groove darkcyan;
+        align-content: center;
+        gap: 10%;
+        margin-bottom: 20%;
+    
+    }
+    
+    .visitanos{
+        @include tituloTerciario;
+        font-size: 2em;                  
+        margin-top: 5%;  
+    
+    }
+
+    iframe{
+        width: 100%;
+        height: 60%;
+    }
+    
+
+    
+    
+    /***************************************************************************************************/
+    
+    
+    
+    /**********************************CONTACTO******************************************************************/
+    
+    .mainGalery3{
+        margin-top: 5%;
+        display: flex;
+        flex-direction: column;   
+    
+    
+    }
+
+
+    .primeParra{       
+        @include tituloSecundario;   
+        font-size: 1.3em;
+    }
+    
+    .imgQR{
+        width: 50%;
+        height: 50%; 
+        margin-left: 25%; 
+
+        
+    }
+
+ 
+    .terceParra{
+        @include tituloTerciario;
+        font-weight: 400;
+        font-size: 1.5em;
+        padding: 8%;            
+    
+    }
+    
+    
+    .formContacto{
+        grid-area: form;
+        padding: 6%;
+        margin: 10%;
+        background-color: lightseagreen;
+        border-style: groove;
+        border-color: darkslateblue;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: bold;
+        
+    
+    }
+
+    
+
+    
+    
+        
+        .iconosRedes{
+            border-style: none;
+            border-color: none;
+            background-color:transparent;
+            margin: 10px;
+            margin-left: 20px;
+        }
+        
+        .iconosRedes:hover{
+            transform: scale(1.5);
+            transition-property: all;
+            transition-duration: 1s;
+        }
+        
+        
+
+
+}
+
+
+
+
+/******************************************** Breakpoint(574px) - FINAL ********************************************/
+
+
+
+
+/******************************************** Breakpoint(768px) - INICIO *******************************************/
+
+
+
+
+@media (min-width: 768px){
+    body {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 200px 100% 150px;
+        grid-template-areas:
+            "header"
+            "mainIndex"
+            "footer";
+        min-height: 100vh;
+        height: 100%;
+        background-image: unset; 
+        background-color: #e5e3cc;
+    }
+
+    header{       
+        grid-area: header;          
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background: linear-gradient(to bottom, goldenrod, lightyellow);
+        border-bottom: groove;
+        border-color: lightseagreen;      
+        font-family: 'Alegreya Sans', sans-serif;
+
+    
+    }
+    
+    .tituloNav{
+        
+        font-family: 'Lilita One', cursive;  
+        font-size: 1em;    
+        color: rgb(202, 34, 34);  
+
+
+        
+    }
+
+    .navbarParte1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        
+        }
+
+
+
+
+    .navbar-toggler-icon{
+        background-image: url(../img/hamburger_icon_143010.svg);
+        width: 100px;
+        height: 100px;
+    }
+
+    .toggler2{
+        background-color: gold;
+        width: 3em;
+        height: 3em;
+        color: black;
+    }
+
+    .contenidoLi{
+        border: 2px solid darkcyan;
+        background-color: rgb(248, 248, 152)
+    }
+
+
+    .imagenPortada {
+        width: 85px;
+        background-color: transparent;
+        border-style: none;
+        height: 40%;
+    }
+
+
+    /*************INDEX*************/
+
+    .contenedorPrincipal{
+    grid-area: contenedorPrincipal;
+    
+}
+
+    h1{
+        @include tituloGeneral;
+        color:rgb(189, 7, 7);
+        font-size: 5em;
+        font-family: "Lilita One", cursive;
+    }
+
+    .contenedorNav{
+        font-size: 1.3em;
+        color: black;
+
+    }
+
+
+    .segundoParrafo{
+        font-size: 1.5em;
+    }
+
+    .tercerParrafo{
+        font-size: 1.5em;
+    }
+
+    .mainIndex {
+        grid-area: mainIndex;
+        margin-top: 1%;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows:  13% 35% 15% 20%;
+        grid-template-areas:
+            "primero"
+            "medio"
+            "cuarto"
+            "carousel";
+        align-items: center;
+    }
+
+    .primerParrafo{
+        grid-area: primero;
+        font-family: 'Lilita One', cursive;        
+        font-size: 3.5em;
+        font-weight: bolder;
+        color: darkred;    
+        border-style: none; 
+        text-align:center;
+        background-color: transparent;        
+    
+    }
+    
+    
+    
+    .medio{
+    grid-area: medio;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 60% 40%;
+    grid-template-areas: 
+    "segundo tercero"
+    "imgMedio tercero";
+    padding: 10px;   
+    background-color: rgb(128, 201, 247);
+    }
+    
+    
+    
+    
+    
+    .segundoParrafo{
+        font-family: 'Ubuntu', sans-serif;
+        grid-area: segundo;
+        font-size: 2em;
+        font-weight: 100;
+        color: darkblue;  
+        font-weight: bold;  
+        border-style: none; 
+        text-align:start;
+        padding: 5%;
+    }
+    
+    .imgMedio{
+        grid-area: imgMedio;
+        width: 80%;
+        height: 100%;
+        object-fit:fill;
+        margin: 0 auto;
+        border-radius: 100%;
+        
+        
+    }
+    
+    .tercerParrafo{
+        font-family: 'Ubuntu', sans-serif;
+        grid-area: tercero;
+        font-size: 2em;
+        font-weight: 100;
+        text-align: justify;
+        color:rgba(0, 0, 139, 0.733);   
+        padding: 5%;
+ 
+    }
+    
+    .cuartoParrafo{
+        grid-area: cuarto;
+        @include tituloTerciario;
+        font-size: 2em;
+        color: darkblue;           
+        padding: 15%;
+    }
+    
+    
+    .carrusel{
+        grid-area: carousel;
+        width: 75%;    
+        margin: 0 auto;   
+        border-style: double;
+        border-color: darkcyan;   
+        
+    }
+    
+    .imgCarousel{
+        width: 100%;
+        height: 100%;     
+    }
+    
+    .nombreJugadorCarrusel{
+    
+        color: darkred;
+        font-weight:900;
+        font-size: 2em;
+        font-family: 'Lilita One', cursive;        
+    
+    
+    }
+    
+    /**************************************/
+
+
+    /******************* CATALOGO *******************/
+
+    .mainGalery {
+        margin-top: 5%;
+        display: grid;
+        grid-template-columns: 19% 19% 19% 19% 19%;
+        grid-template-rows: 8% 17% 17% 17% 17% 17%;
+        grid-template-areas: 
+            "tituloCatalogo tituloCatalogo tituloCatalogo tituloCatalogo tituloCatalogo"
+            "jugador1 jugador2 jugador3 jugador4 jugador5"
+            "jugador6 jugador7 jugador8 jugador9 jugador10"
+            "jugador11 jugador12 jugador13 jugador14 jugador15"
+            "jugador16 jugador17 jugador18 jugador19 jugador20"
+            "seguParra seguParra seguParra seguParra seguParra";
+        gap: 0.8%;
+
+    }
+
+    .tituloCatalogo{
+        grid-area: tituloCatalogo;
+    }
+
+
+
+    .Jugador1, .Jugador2, .Jugador3, .Jugador4, .Jugador5, .Jugador6, .Jugador7, .Jugador8, .Jugador9, .Jugador10, .Jugador11, .Jugador12, .Jugador13, .Jugador14, .Jugador15, .Jugador16, .Jugador17, .Jugador18, .Jugador19, .Jugador20 {
+        font-size: 1em;
+
+
+    }
+
+        .imgCata{
+            width: 100%;
+            height: 65%;
+        }
+
+        .card-text{
+            display: contents;
+        }
+
+        .card-body{
+            margin-top: 1%;
+        }
+
+    /**************************************/
+
+
+
+
+    /******************* AGENTES *******************/
+
+    .tituloAgentes1{
+        @include tituloSecundario;
+        font-size: 2em;
+    }
+
+    .tituloAgentes2{
+        @include tituloTerciario;
+        font-size: 3em;
+    }
+
+    .accordion-header{
+        text-align: center;
+        font-size: 2em;
+        margin-bottom: 2%;
+    }
+
+    .nombreAcordeon{
+        padding: 0;
+    }
+
+    /**************************************/
+
+
+
+
+    /******************* QUIENES SOMOS *******************/
+
+    .tituloQuien{
+        grid-area: titulo;
+        @include tituloSecundario;
+        font-size: 1.5em;
+    }
+    
+    .cartaQuien{
+        grid-area: carta;
+        padding-left: 5%;
+        padding-right: 5%;
+        font-size: 1.1em;
+        font-family: 'Ubuntu', sans-serif;
+        text-align: justify;
+    
+    
+    }
+    
+    .imgCEO{
+        grid-area: CEO;    
+        align-items: center;
+        text-align: center;
+        font-family: 'Lilita One', cursive;  
+        width: 100%;
+        height: 50%;      
+    
+    }
+    
+    .imgCEO2{
+        border: black groove;
+        border-radius: 40%;
+        width: 50%;
+        height: 50%;
+        object-fit: fill;
+        margin-bottom: 2%;
+    
+    }
+    
+    .mainGalery2{
+        padding: 4%;
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: 12% 35% 20% 50%;
+        grid-template-areas: 
+        "titulo titulo titulo"
+        "carta carta carta"
+        ". CEO ."
+        "seccionMapa seccionMapa seccionMapa";
+    
+    }
+    
+    
+    .seccionMapa{
+        grid-area: seccionMapa;
+        display: grid;
+        grid-template-columns: 35% 65%;
+        grid-template-rows: 50%;
+        grid-template-areas: 
+        "visitanos mapa";
+        padding-top: 2%;
+        border-top: groove darkcyan;
+        align-content: center;
+        gap: 10%;
+        margin-bottom: 20%;
+    
+    }
+    
+    .visitanos{
+        grid-area: visitanos;
+        @include tituloTerciario;
+        font-size: 1.8em;    
+        color: darkblue;
+    
+    }
+    
+    .mapa{
+        grid-area: mapa;
+    }
+    
+    
+    
+    
+    iframe{
+        width: 85%;
+        height: 100%
+    }
+    
+    
+    
+    
+    /**************************************/
+
+
+
+
+    /******************* CONTACTO *******************/
+
+
+    .mainGalery3 {
+        margin-top: 15%;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 30% 15% 40%;
+        grid-template-areas:
+            "pagoQR"
+            "titulo3"
+            "form";
+    }
+
+    .pagoQR {
+        display: grid;
+        grid-template-columns: 60% 40%;
+        grid-template-rows: 50%;
+        grid-template-areas: "titulo2 qr";
+        text-align: center;
+        align-items: center;
+        border-bottom: double black;
+    }
+
+    .primeParra{
+        @include tituloSecundario;
+        font-size: 1.4em;
+    }
+
+    .imgQR{
+        width: 80%;
+        height: 70%; 
+        margin: 0 auto;
+
+    .formContacto{
+        margin: 5%;
+    }
+
+    /**************************************/
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/******************************************** Breakpoint(768px) - FINAL ********************************************/
+
+
+
+
+
+
+
+
+/******************************************** Breakpoint(992px) - INICIO *********************************************/
+
+
+
+@media (min-width: 992px) {
+
+    /****Header y generales****/
+
+    header{       
+        grid-area: header;          
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background: linear-gradient(to bottom, goldenrod, lightyellow);
+        border-bottom: groove;
+        border-color: lightseagreen;      
+        font-family: 'Alegreya Sans', sans-serif;
+
+    
+    }
+    
+    .tituloNav{
+        
+        font-family: 'Lilita One', cursive;  
+        font-size: 1em;    
+        color: rgb(202, 34, 34);  
+
+
+        
+    }
+
+    .navbarParte1{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 100%;
+        
+        }
+
+
+
+    
+    .contenedorPrincipal{
+
+        height: 50%;
+        font-size: 1.3em;
+
+    }
+
+
+
+    .imagenPortada {
+        width: 70px;
+        background-color: transparent;
+        border-style: none;
+        height: 60%;
         margin-left: 20px;
     }
     
-    .iconosRedes:hover{
+    .contenedorNav{
+    
+        font-size: 1.5em;
+        font-family: 'Lilita One', cursive;        
+        color: darkred;   
+        text-decoration: none;
+        text-align: center;
+        align-items: center;
+        width: 100%;
+        
+
+    }
+
+
+    
+    ul{
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 100%;  
+        align-items: center;
+    
+        
+    }
+    
+
+    .contenidoLi{
+        background-color: transparent;
+        border-style: none;       
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 10px;
+        list-style-type: none;
+        width: 90%;
+        height: 80%;
+        text-align: center;
+        align-items: center;
+
+
+    }
+    
+    
+
+
+
+
+
+/******************************************************/
+    
+
+    .mainIndex{
+        grid-area: mainIndex;
+    }
+    
+    footer{
+        grid-area: footer;
+    }
+    
+        
+    body{
+            
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 100px 100% 150px;
+        grid-template-areas: 
+        "header"        
+        "mainIndex"        
+        "footer";
+        min-height: 100vh;
+        height: 100%;          
+        background-image: unset;  
+        background-color: #e5e3cc;
+        
+    
+    }
+    
+    
+    footer{        
+        background: linear-gradient(to bottom, gold, rgb(247, 222, 161));    
+        border-style: none;
+        text-align: center;    
+        border-top: groove darkcyan;              
+        
+    }
+    
+    .parraFooter{
+        color: black;
+        font-weight: 100;
+        font-size: 6mm;
+        font-family: 'Alegreya Sans', sans-serif;
+    
+    }
+    
+    
+    /****************************** INDEX*************************/
+    
+    .mainIndex{        
+        margin-top: 1%;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 20% 30% 10% 25%;
+        grid-template-areas:   
+        "primero"     
+        "medio"
+        "cuarto"
+        "carousel";  
+        align-items: center;   
+        
+    }
+    
+    
+    .primerParrafo{
+        grid-area: primero;
+        font-family: 'Lilita One', cursive;        
+        font-size: 5em;
+        font-weight: normal;
+        color: gold;    
+        border-style: none; 
+        text-align:center;
+        background-color: transparent;        
+    
+    }
+    
+    .primerParrafo{
+        animation-duration: 10s;
+        animation-name: aparecer;
+        animation-iteration-count: infinite;
+    
+    }
+    
+    @keyframes aparecer {
+        0%{
+            opacity: 0;
+        }
+    
+        33%{
+            opacity: 1;
+            color: rgb(209, 178, 4);
+        }
+    
+        66%{
+            opacity: 1;
+            color: blue
+        }
+    
+        100%{
+            opacity: 1;
+            color: red;
+        }
+    
+    }
+
+    .primerParrafo:hover{
+        transform: scale(1.125);
+        transition-property: all;
+        transition-duration: 0.8s;
+    }
+    
+
+    h1{
+        color: rgb(189, 7, 7);
+        font-family: 'Lilita One', cursive;
+        font-size: 2.3em;
+        text-align: start;
+    }
+
+
+    .medio{
+    grid-area: medio;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 35% 60%;
+    grid-template-areas: 
+    "segundo tercero"
+    "imgMedio tercero";
+    padding: 10px;   
+    background-color: rgb(128, 201, 247);
+    }
+    
+    
+    
+    
+    
+    .segundoParrafo{
+        font-family: 'Ubuntu', sans-serif;
+        grid-area: segundo;
+        font-size: 2em;
+        font-weight: 100;
+        color: darkblue;  
+        font-weight: bold;  
+        border-style: none; 
+        text-align:center;
+    
+    }
+    
+    .imgMedio{
+        grid-area: imgMedio;
+        width: 80%;
+        height: 100%;
+        object-fit:fill;
+        margin: 0 auto;
+        border-radius: 100%;
+        
+    }
+    
+    .tercerParrafo{
+        font-family: 'Ubuntu', sans-serif;
+        grid-area: tercero;
+        font-size: 2.5em;
+        font-weight: 100;
+        text-align: justify;
+        color:rgba(0, 0, 139, 0.733);    
+    }
+    
+    .cuartoParrafo{
+        grid-area: cuarto;
+        @include tituloTerciario;
+        font-size: 2em;
+        color: darkblue;   
+        padding: 15%;
+    }
+    
+    
+    .carrusel{
+        grid-area: carousel;
+        width: 75%;    
+        margin: 0 auto;   
+        border-style: double;
+        border-color: darkcyan;   
+        
+    }
+    
+    .imgCarousel{
+        width: 100%;
+        height: 100%;     
+    }
+    
+    .nombreJugadorCarrusel{
+    
+        color: darkred;
+        font-weight:900;
+        font-size: 2em;
+        font-family: 'Lilita One', cursive;        
+    
+    
+    }
+    
+
+        
+        .seguParra{
+            grid-area: seguParra;
+            @include tituloTerciario;
+            font-size: 8mm;
+            color: darkblue;
+            margin: 6%;    
+        
+        }
+
+    /*******************************************************/
+
+        
+        .tituloCatalogo{
+            grid-area: tituloCatalogo;
+        }
+    
+        
+        .mainGalery{
+            margin-top: 3%;
+            display: grid;
+            grid-template-columns: 19% 19% 19% 19% 19%;
+            grid-template-rows: 8% 17% 17% 17% 17% 17%;
+            grid-template-areas: 
+            "tituloCatalogo tituloCatalogo tituloCatalogo tituloCatalogo tituloCatalogo "
+            "jugador1 jugador2 jugador3 jugador4 jugador5"
+            "jugador6 jugador7 jugador8 jugador9 jugador10"
+            "jugador11 jugador12 jugador13 jugador14 jugador15"
+            "jugador16 jugador17 jugador18 jugador19 jugador20"
+            "seguParra seguParra seguParra seguParra seguParra" 
+            ;    
+            gap:1%;
+        }   
+        
+        .imgCata{
+            width: 100%;
+            height: 75%;
+            object-fit: cover;
+        }
+    
+    
+        .Jugador1{
+            grid-area: jugador1;  
+        }
+
+        .Jugador1-estilo2{
+            padding: 2%;
+            border-style:double;   
+            border-color:crimson;  
+            background-color: rgba(218, 165, 32, 0.521); 
+            text-align: center;
+            align-items: center;
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: lighter;
+            color: darkred;
+        }
+    
+    
+    
+        .Jugador2{
+            grid-area: jugador2;
+            @extend .Jugador1-estilo2;
+    
+        }
+    
+        .Jugador3{
+            grid-area: jugador3;
+            @extend .Jugador1-estilo2;
+
+        }
+    
+        .Jugador4{
+            grid-area: jugador4;
+            @extend .Jugador1-estilo2;
+
+    
+        }
+    
+        .Jugador5{
+            grid-area: jugador5;
+            @extend .Jugador1-estilo2;
+
+    
+        }
+    
+        .Jugador6{
+            grid-area: jugador6;
+            @extend .Jugador1-estilo2;
+
+        }
+    
+        .Jugador7{
+            grid-area: jugador7;
+            @extend .Jugador1-estilo2;
+
+    
+        }
+    
+        .Jugador8{
+            grid-area: jugador8;
+            @extend .Jugador1-estilo2;
+
+    
+        }
+    
+        .Jugador9{
+            grid-area: jugador9;
+            @extend .Jugador1-estilo2;
+
+    
+        }
+    
+        .Jugador10{
+            grid-area: jugador10;
+            @extend .Jugador1-estilo2;
+
+    
+        }
+    
+        .Jugador11{
+            grid-area: jugador11;
+            @extend .Jugador1-estilo2;
+
+    
+        }
+    
+        .Jugador12{
+            grid-area: jugador12;
+            @extend .Jugador1-estilo2;
+
+    
+        }
+    
+        .Jugador13{
+            grid-area: jugador13;
+            @extend .Jugador1-estilo2;
+
+    
+        }
+    
+        .Jugador14{
+            grid-area: jugador14;
+            @extend .Jugador1-estilo2;
+
+    
+        }
+    
+        .Jugador15{
+            grid-area: jugador15;
+            @extend .Jugador1-estilo2;
+
+    
+        }
+    
+        .Jugador16{
+            grid-area: jugador16;
+            @extend .Jugador1-estilo2;
+
+    
+        }
+    
+        .Jugador17{
+            grid-area: jugador17;
+            @extend .Jugador1-estilo2;
+
+    
+        }
+    
+        .Jugador18{
+            grid-area: jugador18;
+            @extend .Jugador1-estilo2;
+
+    
+        }
+    
+        .Jugador19{
+            grid-area: jugador19;
+            @extend .Jugador1-estilo2;
+
+    
+        }
+    
+        .Jugador20{
+            grid-area: jugador20;
+            @extend .Jugador1-estilo2;
+
+    
+        }
+    
+        .Jugador1:hover, .Jugador2:hover, .Jugador3:hover, .Jugador4:hover, .Jugador5:hover, .Jugador6:hover, .Jugador7:hover ,.Jugador8:hover, .Jugador9:hover, .Jugador10:hover, .Jugador11:hover, .Jugador12:hover, .Jugador13:hover, .Jugador14:hover, .Jugador15:hover, .Jugador16:hover, .Jugador17:hover, .Jugador18:hover, .Jugador19:hover, .Jugador20:hover{
+            transform: scale(1.1);
+            transition-property: all;
+            transition-duration: 1s;
+        }
+    
+    /***************************************************AGENTES************************************************/
+        
+    .titulosAgentes{
+        padding: 5%;    
+    
+    }
+    
+    .titulosAgentes2{
+        padding-top: 10%;
+    
+    }
+    
+    .tituloAgentes1{    
+        @include tituloSecundario;    
+        font-size: 4em;
+
+    }
+    
+    .tituloAgentes2{
+        @include tituloTerciario;
+        font-size: 2em;
+        color: darkred;  
+        font-weight: lighter;
+    
+    }
+    
+    
+    .acordeon{
+        width: 80%;
+        margin: 0 auto;
+        padding: 8%;
+    
+    }
+    
+    .nombreAcordeon{
+        font-family: 'Lilita One', cursive;
+        color: rgb(17, 17, 172);    
+        position: relative;  
+        align-items: center;    
+        padding: 2rem;     
+        background-color: transparent;
+        border: 0;
+    
+    }
+    
+    .contenedorNombreAcordeon{
+        background-color: lightgray;
+        border: 1px solid rgba(0,0,0,.125);    
+    }
+    
+    
+    .accordion-header{
+        font-size: 4em;
+        margin-bottom: 15%;
+        text-align: center;
+        padding-right: 18%;
+
+    }
+    
+
+    .descripAgente{
+        font-size: 1.5em;
+        color: darkcyan;
+        font-family: 'Ubuntu', sans-serif;
+    
+    
+    }
+    
+    
+    
+    
+    .imgAgente{
+        width: 50%;
+        height: 50%;
+        object-fit: cover;
+        border-style: groove;
+        border-color: darkcyan;
+        border-radius: 20%;
+        margin-left: 25%;  
+        margin-bottom: 5%;
+        
+    }
+    
+    .imgAgente2{
+        padding-left: 20px;
+    }
+    
+    .bioAgente{
+        color: darkblue;
+        font-family: 'Lilita One', cursive;   
+        text-align: center;
+    }
+    
+    
+    
+    /***************************************************************************************************/
+    
+    
+    
+    /*******************************QUIENES SOMOS***************************************************/
+    
+    .tituloQuien{
+        grid-area: titulo;
+        @include tituloSecundario;
+        font-size: 2em;       
+    }
+    
+    .cartaQuien{
+        grid-area: carta;
+        padding-left: 5%;
+        padding-right: 5%;
+        font-size: 1.2em;
+        font-family: 'Ubuntu', sans-serif;
+        text-align: justify;
+    
+    
+    }
+    
+    .imgCEO{
+        grid-area: CEO;    
+        align-items: center;
+        text-align: center;
+        font-family: 'Lilita One', cursive;        
+    
+    }
+
+    .imgCEO:hover{
         transform: scale(1.3);
         transition-property: all;
         transition-duration: 1s;
     }
     
-    
-    .tituloTrending{
-        font-size: 4em;
-        font-family: 'Marcellus', serif;
-        font-weight: bolder;
-        color: tomato;
-        margin: 25px;
-    
-    }
-    
-    .imagenTrending{
-        width: 200px;
-        height: 190px;
-        border-radius: 15px;
-        border-style: double;
-        border-width: 5px;
-        border-color: red;
+    .imgCEO2{
+        border: black groove;
+        border-radius: 40%;
+        width: 60%;
+        height: 100%;
+        object-fit: fill;
+        margin-bottom: 2%;
     
     }
     
-    .contenedorPequeñoTrending{
-        width: 300px;
-        height: 320px;
-        border-radius: 20px;
+    .mainGalery2{
+        padding: 4%;
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: 12% 35% 20% 50%;
+        grid-template-areas: 
+        "titulo titulo titulo"
+        "carta carta carta"
+        ". CEO ."
+        "seccionMapa seccionMapa seccionMapa";
+    
+    }
+    
+    
+    .seccionMapa{
+        grid-area: seccionMapa;
+        display: grid;
+        grid-template-columns: 35% 65%;
+        grid-template-rows: 50%;
+        grid-template-areas: 
+        "visitanos mapa";
+        padding-top: 2%;
+        border-top: groove darkcyan;
+        align-content: center;
+        gap: 10%;
+        margin-bottom: 20%;
+    
+    }
+    
+    .visitanos{
+        grid-area: visitanos;
+        @include tituloTerciario;
+        font-size: 2em;    
+        color: darkblue;    
+    }
+    
+    .mapa{
+        grid-area: mapa;
+    }
+    
+    
+    iframe{
+        width: 80%;
+        height: 100%
+    }
+    
+    
+    
+    
+    /***************************************************************************************************/
+    
+    
+    
+    /**********************************CONTACTO******************************************************************/
+    
+    
+    .primeParra{
+        grid-area: titulo2; 
+        @include tituloSecundario;
+        font-size: 1.5em;
+        
+    }
+    
+    .terceParra{
+        grid-area: titulo3;
+        @include tituloTerciario;
+        font-weight: 400;
+        font-size: 1.5em;
+        padding: 8%;      
+    
+    }
+    
+    
+    .formContacto{
+        grid-area: form;
+        padding: 6%;
+        margin: 10%;
+        background-color: lightseagreen;
         border-style: groove;
-        border-color: blue;
-        background-color: goldenrod;
+        border-color: darkslateblue;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: bold;
+        
+    
+    }
+    
+    
+    .imgQR{
+        grid-area: qr;
+        width: 85%;
+        height: 85%;   
+        margin: 0 auto; 
+        
+    }
+    
+    .pagoQR{
+        display: grid;
+        grid-template-columns: 70% 30%;
+        grid-template-rows: 70%;
+        grid-template-areas: 
+        "titulo2 qr";
         text-align: center;
-        padding: 10px;
-        margin: 30px 25px 30px 25px;
+        align-items: center;
+        border-bottom: double black ;
+    
+    }
+    
+    .mainGalery3{
+        margin-top: 5%;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 30% 15% 50%;
+        grid-template-areas: 
+        "pagoQR"
+        "titulo3"
+        "form";        
         
-    }
     
-    .nombreJugador{
-        font-weight: bolder;
-        font-size: 35px;
-        color: red;
-        margin: 2px 5px 10px 5px; 
-    }
-    
-    .valorJugador{
-        font-weight: bold;
-        font-size: 20px;
-        color: blue;
-        margin: 4px 5px 10px 5px
     
     }
     
-    .botonAgente{
-    
-        font-weight: bold;
-        font-size: 20px;    
-        margin-bottom: 10px;
-        border-style: groove;
-        border-color: crimson;
-        background-color: crimson;
-    }
-    
-    .seccionPrincipal{
-        display:flex;
-        flex-direction: row;
-        padding-left: 100px;
-        
-    }
-    
-    .seccionPrincipal2{
-        display:flex;
-        flex-direction: row;
-        padding-left: 300px;
-        
-    }
-    
-    .seccionLocal{
-        display:flex;
-        flex-direction: row;
-        padding-left: 300px;
-    }
-    
-    .color{
-        background-color: blue;
-    }
-    
+
+}
+
 
 }

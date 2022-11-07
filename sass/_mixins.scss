@@ -1,0 +1,34 @@
+@mixin tituloGeneral {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-weight: bold;
+    color: black;
+    font-size: 2em;
+    text-align: center;
+
+}
+
+
+
+@mixin tituloSecundario {
+    background-color: transparent;
+    border-style: none;
+    font-family: "Lilita One", cursive;
+    font-size: 3em;
+    color: darkblue;
+    text-align: center;   
+    padding: 2%;
+
+}
+
+
+@mixin tituloTerciario {
+    font-family: 'Lilita One', cursive;   
+    font-weight: bold;
+    font-size: 3em;  
+    color: darkslateblue;   
+    border-style: none;
+    text-align: center;
+    background-color: transparent;  
+
+}
+

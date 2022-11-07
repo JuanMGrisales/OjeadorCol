@@ -3,63 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ojeador del Fútbol Colombiano</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <meta name="description" content="Colojeador es un sitio web diseñado para facilitar el proceso de fichaje de jugadores de fútbol con nacionalidad colombiana">      
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="../ProyectoNotiFutCol/estilo/style.css">    
+    <link rel="stylesheet" href="./estilo/style.css">
+    <link rel="icon" href="./img/soccerLogo.png">
+    <title> Inicio - Colojeador </title>    
 </head>
 
 
 
+
 <body>
+    <header class="header">           
+        <section class="navbarParte1">
+            <div class="contenedorPrincipal"> 
+                <h1>Colojeador</h1>    
+            </div>    
+            <img class="imagenPortada" src="./img/soccerLogo.png" alt="Logo del Colojeador">
+        </section>  
+        <section class= "navbarParte2">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">  
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon">                 
+                        </span>                    
+                    </button>              
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
     
+                                <li class="contenidoLi">
+                                    <a class="contenedorNav" class="nav-link active" href="index.html">Inicio</a>
+                                </li>
     
-
-    <header class="header">
+                                <li class="contenidoLi">
+                                    <a class="contenedorNav" class="nav-link active" href="./sections/catalogo.html"> Jugadores</a>
+                                </li>     
+                            
+                                <li class="contenidoLi">
+                                    <a class="contenedorNav" class="nav-link active" href="./sections/agentes.html">Agentes</a>
+                                </li>
     
-        
-        
-        <div class="contenedorPrincipal"> 
-
-            <h1>El Ojeador Colombiano</h1>
-
-        </div>
-
-        <img class="imagenPortada" src="../ProyectoNotiFutCol/img/ojeador.jpg">
-        
-        <div class="searchBar">
-            <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-        </div>
-        
-
+                                <li class="contenidoLi">
+                                    <a class="contenedorNav" class="nav-link active" href="./sections/quien.html">Nosotros</a>
+                                </li>
+    
+                                <li class="contenidoLi">
+                                    <a class="contenedorNav" class="nav-link active" href="./sections/contacto.html">Contacto</a>
+                                </li>
+    
+                            </ul>
+                        </div>
+                </div>
+            </nav>
+        </section>
     </header>
 
-    <nav class="navMobil">
-        <ul>
-            <li>
-                <a class="contenedorNav" href="index.html">Inicio</a>
-            </li>
 
-            <li>
-                <a class="contenedorNav" href="./sections/trending.html"> Jugadores Trending</a>
-            </li>
-
-            <li>
-                <a class="contenedorNav" href="./sections/internacional.html">Internacional</a>
-            </li>
-
-            <li>
-                <a class="contenedorNav" href="./sections/local.html">Torneo Local</a>
-            </li>
-            
-            <li>
-                <a class="contenedorNav" href="./sections/femenino.html">Fútbol Femenino</a>
-            </li>                
-        </ul>
-    </nav>     
 
 
 
@@ -75,15 +75,52 @@
 
     <main class="mainIndex">
 
-
-        <h2>El asistente que necesitas para contratar una estrella del fútbol cafetero!</h2>
-
-        <p class="primerParrafo">El Ojeador se encarga de buscar las mejores opciones colombianas del mercado de fichajes. Acá te informamos el precio actual de los jugadores más destacados y te ofrecemos la opción de contactar su agente directamente.</p>
+        <h2 class="primerParrafo">Bienvenidos al hogar de Colojeador!</h2>
         
-        <p class="segundoParrafo">Nuestra comisión es la más rentable del mercado!</p>
+        <div class="medio">
+            <p class="segundoParrafo"> Somos intermediarios en el proceso de contratación de una estrella del fútbol cafetero.</p>            
+            <img class="imgMedio" src="./img/ojeador.jpg" alt="Ojeador">
+            <p class="tercerParrafo"> Colojeador se encarga de mostrar las mejores opciones actuales del mercado de fichajes. Acá te informamos el precio actual de los jugadores más destacados y te ofrecemos la opción de contactar al jugador mediante nuestros especializados agentes. </p>
+        </div>       
 
+        <h3 class="cuartoParrafo"> Estos son solo algunos de los cracks que hemos representado:</h3>
 
-
+        <section class="carrusel">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                    <img class="imgCata" src="./img/Pibe2.jpg" alt="Pibe">
+                    <div class="carousel-caption d-none d-md-block">
+                    <p class="nombreJugadorCarrusel">Carlos 'El Pibe' Valderrama</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="imgCata" src="./img/ivanCordoba.jpg" alt="Cordoba">
+                    <div class="carousel-caption d-none d-md-block">
+                    <p class="nombreJugadorCarrusel">Iván Ramiro Córdoba</p>                     
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="imgCata" src="./img/radamelFalcao.jpg" alt="Radamel">
+                    <div class="carousel-caption d-none d-md-block">
+                    <p class="nombreJugadorCarrusel">Radamel Falcao García</p>                      
+                    </div>
+                </div>             
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>            
+            </div>
+        </section>
     </main>
 
 
@@ -92,40 +129,21 @@
 
 
 
+    <footer>   
+        <a href="https://es-la.facebook.com/" target="_blank">
+            <img class="iconosRedes" src="https://img.icons8.com/fluency/48/000000/facebook-new.png" alt="Facebook logo"/>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank">
+            <img class="iconosRedes" src="https://img.icons8.com/fluency/48/000000/instagram-new.png" alt="Instagram logo"/>
+        </a>
+        <a href="https://www.whatsapp.com/" target="_blank">
+            <img class="iconosRedes" src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="Whatsapp logo"/>
+        </a>
+        <p class="parraFooter">© Juan Grisales Development, 2022.</p>
+    </footer>
 
 
-
-
-<footer>
-
-    <strong>
-        <p>Contáctanos...</p>
-    </strong>
-
-    
-    <a href="https://es-la.facebook.com/" target="_blank">
-
-        <img class="iconosRedes" src="https://img.icons8.com/fluency/48/000000/facebook-new.png"/>
-
-    </a>
-
-    <a href="https://www.instagram.com/" target="_blank">
-
-        <img class="iconosRedes" src="https://img.icons8.com/fluency/48/000000/instagram-new.png"/>
-
-    </a>
-
-    <a href="https://www.whatsapp.com/" target="_blank">
-
-        <img class="iconosRedes" src="https://img.icons8.com/color/48/000000/whatsapp--v1.png"/>
-
-
-    </a>
-    
-</footer>
-
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
 
 </body>
